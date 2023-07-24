@@ -24,27 +24,37 @@ class Home extends StatelessWidget {
                   color: Color(0xff5a9fd2),
                 ),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.indigo,
-                  elevation: 20,
-                  shadowColor: Colors.indigo,
+
+
+              Container(
+                padding: EdgeInsets.all(15),
+                width: 300,
+                height: 400,
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(350),
+                      topRight: Radius.circular(15),
+                    ),
+                  ),
+                  elevation: 10,
+                    child: Column(
+                      children: [
+                        Image.asset(
+                            'assets/images/perfume.png',
+                        ),
+                        Text('Perfume'),
+                        ElevatedButton(
+                          onPressed: (){},
+                          child: Text(
+                              'Add to card'
+                          ),
+                        ),
+                      ],
+                    ),
+
                 ),
-                onPressed: (){},
-                child: Text('Hello Akhuwat'),
               ),
-              ElevatedButton(
-                onPressed: (){},
-                child: Text('Hello Akhuwat'),
-              ),
-              ElevatedButton(
-                onPressed: (){},
-                child: Text('Hello Web development'),
-              ),
-              Text('Text'),
-
-              Image.network('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chan-walrus-958545.jpg&fm=jpg'),
-
             ],
           ),
         ),
