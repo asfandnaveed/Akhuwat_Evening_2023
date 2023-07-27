@@ -36,9 +36,19 @@ class Task_27_07 extends StatelessWidget {
                         ],
                       ),
                       ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.grey,
+                          elevation: 10.0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(200)
+                          ),
+                        ),
                           onPressed: (){},
-                          child: Icon(
-                            Icons.arrow_back_ios_rounded,
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 35.0,bottom: 35.0),
+                            child: Icon(
+                              Icons.arrow_back_ios_rounded,
+                            ),
                           ),
                       ),
                     ],
