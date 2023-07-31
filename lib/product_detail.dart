@@ -26,68 +26,91 @@ class ProductDetail extends StatelessWidget {
               ),
 
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Veg Burger',
-                    style: TextStyle(
-                      fontSize: 23,
-                      fontWeight: FontWeight.w600
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Veg Burger',
+                      style: TextStyle(
+                        fontSize: 23,
+                        fontWeight: FontWeight.w600
+                      ),
                     ),
-                  ),
 
-                  Container(
-                    child: Row(
-                      children: [
-                        Card(
-                          color: Color(0xffe2dcd7),
-                          elevation: 6.0,
-                          child: Container(
-                            width: 40,
-                            height: 40,
-                            child: Center(
-                              child: Text(
-                                '-',
-                                style: TextStyle(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xffc6c0bb),
+                    Container(
+                      child: Row(
+                        children: [
+                          Card(
+                            color: Color(0xffe2dcd7),
+                            elevation: 6.0,
+                            child: Container(
+                              width: 40,
+                              height: 40,
+                              child: Center(
+                                child: Text(
+                                  '-',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w600,
+                                    color: Color(0xffc6c0bb),
+                                  ),
                                 ),
                               ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '01',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w500,
+                          SizedBox(
+                            width: 10,
                           ),
-                        ),
-                        Card(
-                          color: Color(0xffcd461d),
-                          elevation: 6.0,
-                          shadowColor: Color(0xffcd461d),
-                          child: Container(
-                            width: 40,
-                            height: 40,
-                            child: Center(
-                              child: Text(
-                                '+',
-                                style: TextStyle(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.white,
+                          Text(
+                            '01',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Card(
+                            color: Color(0xffcd461d),
+                            elevation: 6.0,
+                            shadowColor: Color(0xffcd461d),
+                            child: Container(
+                              width: 40,
+                              height: 40,
+                              child: Center(
+                                child: Text(
+                                  '+',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
+
+
+                  ],
+                ),
+              ),
+
+
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  "The world's favorite US burger! Two Crunchy potato and peas patties topped Read more.",
+                  style: TextStyle(
+                      color:Color(0xff575757),
+                    fontSize: 15,
                   ),
-                ],
+                ),
               ),
             ],
           ),
