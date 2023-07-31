@@ -112,6 +112,102 @@ class ProductDetail extends StatelessWidget {
                   ),
                 ),
               ),
+
+
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Container(
+
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: Color(0xffe9e9e5),
+                    )
+                  ),
+                  padding: EdgeInsets.all(15),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                              '523 kkal',
+                            style: TextStyle(
+                              fontSize: 21,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                              'Energy',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Color(0xff818181),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        height: 30,
+                        width: 2,
+                        color: Color(0xffe9e9e5),
+                      ),
+
+                      Column(
+                        children: [
+                          Text(
+                            '4.6',
+                            style: TextStyle(
+                              fontSize: 21,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Ratting',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Color(0xff818181),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        height: 30,
+                        width: 2,
+                        color: Color(0xffe9e9e5),
+                      ),
+
+                      Column(
+                        children: [
+                          Text(
+                            '30 Min',
+                            style: TextStyle(
+                              fontSize: 21,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Delivery Time',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Color(0xff818181),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
