@@ -1,10 +1,11 @@
+import 'package:akhuwat/product_detail.dart';
 import 'package:akhuwat/sample.dart';
 import 'package:akhuwat/task_27_07.dart';
 import 'package:flutter/material.dart';
 
 
 void main() {
-  runApp(const Task_27_07());
+  runApp(const ProductDetail());
 }
 
 
