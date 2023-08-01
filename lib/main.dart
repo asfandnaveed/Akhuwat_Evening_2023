@@ -2,11 +2,35 @@ import 'package:akhuwat/product_detail.dart';
 import 'package:akhuwat/sample.dart';
 import 'package:akhuwat/task_27_07.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 
 void main() {
-  runApp(const ProductDetail());
+  runApp(const SplashScreen());
 }
+
+
+
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: AnimatedSplashScreen(
+          splash: 'assets/images/perfume.png',
+          nextScreen: ProductDetail(),
+          splashTransition: SplashTransition.scaleTransition,
+
+        ),
+      ),
+    );
+  }
+}
+
+
+
 
 
 class Home extends StatelessWidget {
