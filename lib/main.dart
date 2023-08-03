@@ -1,3 +1,4 @@
+import 'package:akhuwat/Nutrition_design/Nutrition_home.dart';
 import 'package:akhuwat/product_detail.dart';
 import 'package:akhuwat/sample.dart';
 import 'package:akhuwat/task_27_07.dart';
@@ -20,7 +21,7 @@ class SplashScreen extends StatelessWidget {
       home: Scaffold(
         body: AnimatedSplashScreen(
           splash: 'assets/images/perfume.png',
-          nextScreen: ProductDetail(),
+          nextScreen: NutritionHomePage(),
           splashTransition: SplashTransition.scaleTransition,
 
         ),

@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class ProductDetail extends StatelessWidget {
+class ProductDetail extends StatefulWidget {
   const ProductDetail({super.key});
+
+  @override
+  State<ProductDetail> createState() => _ProductDetailState();
+}
+
+class _ProductDetailState extends State<ProductDetail> {
+
+  int value = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +77,7 @@ class ProductDetail extends StatelessWidget {
                               width: 10,
                             ),
                             Text(
-                              '01',
+                              value.toString(),
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,
@@ -79,7 +87,12 @@ class ProductDetail extends StatelessWidget {
                               width: 10,
                             ),
                             InkWell(
-                              onTap: (){},
+                              onTap: (){
+                                value++;
+                                setState(() {
+
+                                });
+                              },
                               child: Card(
                                 color: Color(0xffcd461d),
                                 elevation: 6.0,
