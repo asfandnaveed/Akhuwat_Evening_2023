@@ -22,6 +22,13 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
     'Sweets',
   ];
 
+  List<String> pImage=[
+    'assets/images/cardImg1.png',
+    'assets/images/cardImg2.png',
+    'assets/images/cardImg1.png',
+    'assets/images/cardImg2.png',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,11 +78,59 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                 ),
               ),
 
-
-              ListView.builder(
-                  itemBuilder: itemBuilder
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                height: 70,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: categories.length,
+                    itemBuilder: (context,index){
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                            categories[index],
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xff9A9A9D),
+                          ),
+                        ),
+                      );
+                    },
+                ),
+              ),
+              SizedBox(
+                height: 30,
               ),
 
+              Container(
+                height: 350,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: pImage.length,
+                    itemBuilder: (context,index){
+                      return Stack(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 30),
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(35)
+                              ),
+                              child: Container(
+                                width: 200,
+                                height: 300,
+                              ),
+                            ),
+                          ),
+                          Image.asset(pImage[index])
+                        ],
+                      );
+                    }
+                ),
+              ),
 
             ],
           ),
