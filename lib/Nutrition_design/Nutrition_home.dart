@@ -9,6 +9,19 @@ class NutritionHomePage extends StatefulWidget {
 }
 
 class _NutritionHomePageState extends State<NutritionHomePage> {
+
+  List<String> categories =[
+    'Food',
+    'Drinks',
+    'Snacks',
+    'Sauces',
+    'Chips',
+    'Cold',
+    'Dessert',
+    'Chinese',
+    'Sweets',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +53,7 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
               SizedBox(
                 height: 30,
               ),
-              
+
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 15),
                 decoration: BoxDecoration(
@@ -52,9 +65,15 @@ class _NutritionHomePageState extends State<NutritionHomePage> {
                     icon: Icon(
                       Icons.search,
                     ),
-                    border: InputBorder.none
+                    border: InputBorder.none,
+                    hintText: 'Search',
                   ),
                 ),
+              ),
+
+
+              ListView.builder(
+                  itemBuilder: itemBuilder
               ),
 
 
