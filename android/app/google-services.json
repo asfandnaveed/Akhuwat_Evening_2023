@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "497081102573",
+    "project_id": "akhuwat-79c6a",
+    "storage_bucket": "akhuwat-79c6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497081102573:android:e247ced8246ef82f799ce4",
+        "android_client_info": {
+          "package_name": "com.proglabs.akhuwat.akhuwat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497081102573-m9c4q3648nnga41qo7v4jt2g323pgcg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPa5MhQAxPtIv5L4eyC3h4WPV8M0xvVVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497081102573-m9c4q3648nnga41qo7v4jt2g323pgcg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

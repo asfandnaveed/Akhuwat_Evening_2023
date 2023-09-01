@@ -1,9 +1,12 @@
+import 'package:akhuwat/Constant/constant.dart';
+import 'package:akhuwat/LoginScreen/login.dart';
 import 'package:akhuwat/Nutrition_design/Nutrition_home.dart';
 import 'package:akhuwat/product_detail.dart';
 import 'package:akhuwat/sample.dart';
 import 'package:akhuwat/task_27_07.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:get/get.dart';
 
 
 void main() {
@@ -17,11 +20,32 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: kBackGroundColor,
+        textTheme: const TextTheme(
+          headline4: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+          headline6:
+          TextStyle(color: Colors.white, fontWeight: FontWeight.normal),
+          button: TextStyle(
+            color: kPrimaryColor,
+          ),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.white.withOpacity(0.2)),
+          ),
+        ),
+      ),
       home: Scaffold(
         body: AnimatedSplashScreen(
           splash: 'assets/images/perfume.png',
-          nextScreen: NutritionHomePage(),
+          nextScreen: SignInScreen(),
           splashTransition: SplashTransition.scaleTransition,
 
         ),
